@@ -218,7 +218,7 @@ h4 {
   align-items: center;
   margin-bottom: 0;
   padding-left: 0;
-  font-family: var(--Poppins-Regular);
+  font-family: var(--Poppins-Medium);
   font-size: clamp(1.3rem, 0.141vw + 1.23rem, 1.5rem);
 }
 
@@ -258,6 +258,7 @@ h4 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  font-family: var(--Poppins-Medium);
 }
 
 .search-container input {
@@ -306,6 +307,7 @@ h4 {
 }
 .navigation .navigation-right ul li a {
   color: var(--green-color);
+  font-family: var(--Poppins-SemiBold);
 }
 
 .navigation .navigation-right ul li a::after {
@@ -495,6 +497,15 @@ img {
 
 .profile-button {
   text-align: center;
+}
+.profiles-icons{
+  cursor: pointer;
+}
+
+.profiles-icons:hover .profile-image{
+  transform: scale(1.1);
+  transition: 0.5s linear;
+  cursor: pointer;
 }
 
 /* Youtube  */
@@ -754,8 +765,8 @@ textarea {
 /* <!-- ------------------------------ Footer ----------------------------> */
 
 .footer-main-block {
-  padding: 70px;
-  background-color: var(--gray-color);
+  padding: 45px;
+  background-color: #d9631a;
 }
 .footer-main-block .paragraph,
 .footer-main-block h4 {
@@ -767,7 +778,7 @@ textarea {
 }
 
 .footer-block .logo img {
-  width: 100px;
+  width: 200px;
 }
 
 .footer-block a {
@@ -782,15 +793,28 @@ textarea {
   margin-right: 15px;
   object-fit: none;
 }
+.icons-footer{
+  font-size: 20px;
+  padding: 8px;
+  background: var(--white-Color);
+  border-radius: 5px;
+  margin-right: 10px;
+  color: var(--green-color);
+  transition: 0.5s linear;
+}
 
+.icons-footer:hover{
+  background: #002051cc;
+  color:var(--white-Color)
+}
 /* <!-- Scroll to top  --> */
 
 #scrolltop {
   position: fixed;
-  bottom: 100px;
-  right: 50px;
+  bottom: 70px;
+  right: 35px;
   padding: 15px 18px;
-  background: var(--yellow-color);
+  background: var(--green-color);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -802,6 +826,23 @@ textarea {
   color: #ecf0f1;
 }
 
+#scrolltop:hover{
+  background-color: #10481c;
+}
+
+.footer-main-block .search-container{
+  width: 80%;
+  margin-top:20px;
+}
+
+.footer-main-block .search-container input{
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.search-container .searchbar{
+  font-size: 15px;
+}
 /* ------------------------------------- Media Query ----------------------------------- */
 
 /* 820 media query */
