@@ -481,6 +481,7 @@ img {
 .profiles-icons img {
   width: 100px;
   height: 140px;
+  transition: 0.5s ease-in-out;
 }
 
 .icon-numbers {
@@ -506,7 +507,6 @@ img {
 
 .profiles-icons:hover .profile-image {
   transform: scale(1.1);
-  transition: 0.5s linear;
   cursor: pointer;
 }
 
