@@ -27,6 +27,7 @@
 }
 
 :root {
+
   /* Var Color */
   --blue-Color: #00325c;
   --black-Color: #222136;
@@ -42,7 +43,6 @@
   --Poppins-SemiBold: "Poppins SemiBold"; /* Poppins SemiBold 600 */
 
   font-size: 10px;
-
   overflow-x: hidden;
 }
 
@@ -56,6 +56,7 @@ h1 {
   color: var(--white-Color);
   font-family: var(--Poppins-Medium);
   margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -75,8 +76,17 @@ h3 {
   color: var(--white-Color);
 }
 
+h4 {
+  font-size: clamp(1.8rem, 0.213vw + 1.694rem, 2rem);
+  line-height: 25px;
+  color: var(--black-Color);
+  font-family: var(--Poppins-Medium);
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
 .paragraph {
-  font-size: clamp(1.4rem, 0.213vw + 1.294rem, 1.6rem);
+  font-size: clamp(1.3rem, 0.141vw + 1.23rem, 1.5rem);
   letter-spacing: 1px;
   line-height: 25px;
   color: var(--white-Color);
@@ -181,6 +191,7 @@ h3 {
   transition: all 0.5s ease-in-out;
   top: 3px;
 }
+
 .simple-cta a {
   color: var(--white-Color);
 }
@@ -191,15 +202,6 @@ li {
 
 img {
   width: 100%;
-}
-
-h4 {
-  font-size: clamp(1.8rem, 0.213vw + 1.694rem, 2rem);
-  line-height: 25px;
-  color: var(--black-Color);
-  font-family: var(--Poppins-Medium);
-  padding-bottom: 10px;
-  margin-bottom: 0;
 }
 
 /* first Navigation */
@@ -323,10 +325,10 @@ h4 {
 
 .toggle-btn {
   display: none;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   z-index: 99;
-  color: var(--white-Color);
+  color: var(--black-Color);
 }
 .toggle-btn .close-btn {
   display: none;
@@ -352,7 +354,7 @@ h4 {
   display: flex;
 }
 
-  /*--------- Slick banner ------- */
+/*--------- Slick banner ------- */
 
 .banner-image img {
   object-fit: inherit;
@@ -414,7 +416,7 @@ h4 {
   border-radius: 10px;
 }
 
-/* --------  Sign Post-Image/Image with Rollover/Document Download  ------------ */
+/* --------  Our Products  ------------ */
 
 .rollover-variation .signpost-box {
   position: relative;
@@ -749,14 +751,6 @@ textarea {
   font-size: 13px;
   line-height: 20px;
 }
-@media (max-width: 768px) {
-  .swiper-slide {
-    width: 100%;
-  }
-  .swiper-slide:nth-child(2n) {
-    width: 100%;
-  }
-}
 
 /* <!-- ---------------- Footer --------------------> */
 
@@ -830,6 +824,7 @@ textarea {
 .footer-main-block .search-container {
   width: 80%;
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .footer-main-block .search-container input {
@@ -843,17 +838,14 @@ textarea {
 
 /* ------------------- Media Query -------------------- */
 
-/* 820 media query */
+/* 912 media query */
 
-@media (max-width: 820px) {
-  .section-title {
-    margin-bottom: 25px;
-  }
+@media (max-width: 912px) {
 
   /*Navigation media  */
   .navigation-right {
     visibility: hidden;
-    background-color: #95a5a6;
+    background-color: var(--green-color);
     height: 100vh;
     width: 250px;
     transition: all 0.5s ease-in-out;
@@ -874,7 +866,7 @@ textarea {
   }
 
   .main-navigation {
-    padding: 30px 25px;
+    padding: 15px 25px;
   }
   .main-navigation .navigation {
     justify-content: space-between;
@@ -892,6 +884,40 @@ textarea {
   .active-toggle .close-btn {
     display: block;
   }
+
+  .search-container-nav {
+    display: none;
+  }
+
+  .greentheme-cta.greentheme-nav {
+    display: none;
+  }
+
+  .navigation .navigation-right ul li a {
+    color: var(--white-Color);
+  }
+
+  /* Our Product */
+
+  .rollover-variation .signpost-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* // Media 768 */
+
+@media (max-width: 768px) {
+  /* Banner  */
+  h1 {
+    line-height: 45px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+  .swiper-slide:nth-child(2n) {
+    width: 100%;
+  }
 }
 
 /* // Media 576 */
@@ -904,26 +930,70 @@ textarea {
     margin-bottom: 40px;
   }
 
+  /* Navigation  */
+
+  .top-navigation-left {
+    display: none;
+  }
+  .top-navigation-right {
+    margin: auto;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+  .toggle-btn {
+    font-size: 21px;
+  }
+
+  /* Banner  */
+
+  .image-content {
+    text-align: center;
+    width: 90%;
+  }
+
+  .paragraph {
+    line-height: 20px;
+  }
+
+  h1 {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Rating & Review  */
+
+  .left-ratingsection {
+    border-right: 0;
+    padding-right: 0;
+    padding: 10px;
+  }
+
+  .right-container {
+    padding: 0 20px 0 10px;
+  }
+
   /* Footer Block  */
 
   .footer-block {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 10px;
   }
+
   .social-images {
     padding-left: 5px;
   }
+  
   .footer-main-block {
-    margin-top: 70px;
     padding: 50px 15px;
   }
 
   /* Contact us  */
-  
+
   .form-row {
     flex-direction: column;
   }
-
 
   /* <!-- Scroll to top  --> */
   #scrolltop {
