@@ -45,7 +45,7 @@
   overflow-x: hidden;
 }
 
-body{
+body {
   scroll-behavior: smooth;
 }
 
@@ -854,7 +854,6 @@ textarea {
   border-radius: 6px;
   border: 3px solid #f1f1f1;
 }
-
 
 /* ------------------- Media Query -------------------- */
 
