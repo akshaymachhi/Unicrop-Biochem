@@ -360,7 +360,7 @@ img {
 /*--------- Slick banner ------- */
 
 .banner-image img {
-  object-fit: inherit;
+  object-fit: fill;
   min-height: 50vh;
   width: 100%;
 }
