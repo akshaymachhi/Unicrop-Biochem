@@ -27,7 +27,6 @@
 }
 
 :root {
-
   /* Var Color */
   --blue-Color: #00325c;
   --black-Color: #222136;
@@ -836,12 +835,28 @@ textarea {
   font-size: 15px;
 }
 
+/* Scroll color  */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green-color);
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+}
+
+
 /* ------------------- Media Query -------------------- */
 
 /* 912 media query */
 
 @media (max-width: 912px) {
-
   /*Navigation media  */
   .navigation-right {
     visibility: hidden;
@@ -923,7 +938,6 @@ textarea {
 /* // Media 576 */
 
 @media (max-width: 576px) {
-
   /* /* Global Css  * */
   .section-margin {
     margin-top: 40px;
@@ -984,7 +998,7 @@ textarea {
   .social-images {
     padding-left: 5px;
   }
-  
+
   .footer-main-block {
     padding: 50px 15px;
   }
